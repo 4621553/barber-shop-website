@@ -1,0 +1,172 @@
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+header {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-one {
+  position: relative;
+}
+
+.main-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  text-align: left;
+}
+
+.main-text > h2 {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-family: poller_oneregular;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 15px 25px;
+}
+
+.main-text > span {
+  background:rgb(37,37,37);
+  color: #ffffff;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 15px;
+  padding: 15px 25px;
+}
+
+#read-more {
+  background: rgb(11,163,156);
+  color: #ffffff;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 15px;
+  padding: 17px 14px;
+}
+
+#read-more:hover {
+  background: rgb(15, 202, 192);
+}
+
+.main-two {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 340px;
+  padding-bottom: 40px;
+}
+
+#mustache-man {
+  width: 100%;
+}
+
+.nav-elements {
+  color: black;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+  padding: 10px 15px 20px 18px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(58,181,193);
+  text-decoration: none;
+}
+
+#home-button {
+  color: rgb(58,181,193);
+}
+
+.the-men {
+  padding-top: 34px;
+  margin: 0 10px 20px;
+}
+
+#the-boys {
+  border: 2px solid #1a1a1a;
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: .8;
+  transition: all 0.5s ease;
+
+}
+
+#the-boys:hover {
+  filter: contrast(130%);
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+h3 {
+  padding: 0px 90px 0px 90px;
+  font-family: poller_oneregular;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+footer {
+  height: 120px;
+  background-color: rgb(37,37,37);
+}
+
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.foot-container {
+  height: 120px;
+  padding: 0px 15px 0px 15px;
+  margin: 0px 275px 0px 275px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-nav {
+  display: flex;
+}
+.social-nav > li {
+  margin-left: 20px;
+}
+
+.social-nav > li > a > img:hover {
+  filter: grayscale(100%);
+}
+
+
+
+
