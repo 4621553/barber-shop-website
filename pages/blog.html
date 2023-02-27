@@ -1,89 +1,143 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/reset.css">
-  <link rel="stylesheet" href="../styles/blog.css">
-  <title>Blog</title>
-</head>
-<body>
-  <div class="main-container">
-    <header>
-      <a href="../index.html">
-        <img
-          src="../images/main-logo.jpg"
-          id="logo"
-          alt="main logo of mustache"
-        />
-      </a>
-      <nav>
-        <ul>
-          <il class="nav-elements">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <script src="../scripts.js" defer></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <a href="../index.html">
+          <img
+            src="../images/main-logo.jpg"
+            id="logo"
+            alt="main logo of mustache"
+          />
+        </a>
+        <nav class="nav-bar">
+          <ul>
+            <il class="nav-elements">
+              <a href="../index.html">HOME</a>
+            </il>
+            <il class="nav-elements">
+              <a href="./about.html">ABOUT</a>
+            </il>
+            <il class="nav-elements">
+              <a href="./gallery.html">GALLERY</a>
+            </il>
+            <il class="nav-elements">
+              <a href="./blog.html" id="blog-button">BLOG</a>
+            </il>
+            <il class="nav-elements">
+              <a href="./contact.html">CONTACT</a>
+            </il>
+          </ul>
+        </nav>
+        <div class="dropdown">
+          <div onclick="myFunction()" class="dropbtn">
+          </div>
+          <div id="myDropdown" class="dropdown-content">
             <a href="../index.html">HOME</a>
-          </il>
-          <il class="nav-elements">
             <a href="./about.html">ABOUT</a>
-          </il>
-          <il class="nav-elements">
             <a href="./gallery.html">GALLERY</a>
-          </il>
-          <il class="nav-elements">
-            <a href="./blog.html" id="blog-button">BLOG</a>
-          </il>
-          <il class="nav-elements">
+            <a href="./blog.html">BLOG</a>
             <a href="./contact.html">CONTACT</a>
-          </il>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>BLOG</h1>
-    </main>
-    <footer>
-      <div class="foot-container">
-        <p>&copy 2023 by Iporem. All rights reserved.</p>
-        <ul class="social-nav">
-          <li id="twitter">
-            <a href="https://twitter.com/">
-              <img
-                id="social"
-                src="../images/social-media-icons/twitter-icon.png"
-                alt=""
-              />
-            </a>
-          </li>
-          <li id="facebook">
-            <a href="https://www.facebook.com/">
-              <img
-                id="social"
-                src="../images/social-media-icons/facebook-icon.png"
-                alt=""
-              />
-            </a>
-          </li>
-          <li id="linked-in">
-            <a href="https://www.linkedin.com/">
-              <img
-                id="social"
-                src="../images/social-media-icons/linked-in-icon.png"
-                alt=""
-              />
-            </a>
-          </li>
-          <li id="pinterest">
-            <a href="https://www.pinterest.com/">
-              <img
-                id="social"
-                src="../images/social-media-icons/pinterest-icon.png"
-                alt=""
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  
-</body>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1>BLOG</h1>
+        <div class="container">
+          <div class="short">
+            <img src="../images/blog 1.jpg" alt="" />
+          </div>
+          <div class="long">
+            <h2>WHY I GREW A MUSTACHE</h2>
+            <span>
+              This website template has been designed by Free Website Templates
+              for you, <br />
+              for free. You can replace all this text with your own text.
+            </span>
+            <br />
+            <button>READ THIS</button>
+          </div>
+          <div class="short">
+            <img src="../images/blog2.jpg" alt="" />
+          </div>
+          <div class="long">
+            <h2>IN THE COUNTRY</h2>
+            <span
+              >Want an easier solution for a Free Website? Head straight to Wix
+              and <br />
+              immediately start customizing your website!</span
+            >
+            <br />
+            <button>READ THIS</button>
+          </div>
+          <div class="short">
+            <img src="../images/blog3.jpg" alt="" />
+          </div>
+          <div class="long" id="last">
+            <h2>THE MUSTACHE BROTHERS</h2>
+            <span
+              >Wix is an online website builder with a simple drag & drop
+              interface, meaning <br />
+              you do the work online and instantly publish to the web. Nothing
+              to download,<br />
+              nothing to upload.</span
+            >
+            <br />
+            <button>READ THIS</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="foot-container">
+          <p>&copy 2023 by Iporem. All rights reserved.</p>
+          <ul class="social-nav">
+            <li id="twitter">
+              <a href="https://twitter.com/">
+                <img
+                  id="social"
+                  src="../images/social-media-icons/twitter-icon.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li id="facebook">
+              <a href="https://www.facebook.com/">
+                <img
+                  id="social"
+                  src="../images/social-media-icons/facebook-icon.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li id="linked-in">
+              <a href="https://www.linkedin.com/">
+                <img
+                  id="social"
+                  src="../images/social-media-icons/linked-in-icon.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li id="pinterest">
+              <a href="https://www.pinterest.com/">
+                <img
+                  id="social"
+                  src="../images/social-media-icons/pinterest-icon.png"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

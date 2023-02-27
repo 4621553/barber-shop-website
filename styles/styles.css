@@ -7,6 +7,7 @@
 
 header {
   height: 250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,6 +103,10 @@ a:hover {
   color: rgb(58,181,193);
 }
 
+.dropdown a {
+  display: none;
+}
+
 .the-men {
   padding-top: 34px;
   margin: 0 10px 20px;
@@ -118,7 +123,7 @@ a:hover {
 }
 
 #the-boys:hover {
-  filter: contrast(130%);
+  opacity: 1;
 }
 
 .titles {
@@ -167,6 +172,100 @@ p {
   filter: grayscale(100%);
 }
 
+@media (max-width: 598px) {
+ .main-container {
+  /* border: 2px solid red; */
+  display: block;
+ }
 
+ #mustache-man {
+  width: 100%;
+}
+
+ .nav-bar {
+  display: none;
+ }
+
+ .dropbtn {
+  width: 60px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: url(../images/hamburger.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 1px;
+  background-color:rgb(58,181,193);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+ }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(67, 216, 229);
+}
+
+.dropdown {
+  float: middle;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  background-color: rgb(58,181,193);
+  text-align: center;
+  min-width: 260px;
+ 
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left: -160%;
+  top: 120%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-family: "Arial Black", Gadget, sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+ 
+ .main-text {
+  position: absolute;
+  top: 100%;
+  left: 4%;
+  text-align: center;
+}
+
+ .main-two {
+  /* border: 2px solid rgb(55, 0, 255); */
+  height: 1100px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+ }
+
+ .titles {
+  display: none;
+ }
+
+ .foot-container {
+  justify-content: center;
+  margin: auto;
+ }
+
+}
 
 

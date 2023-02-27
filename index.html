@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts.js" defer></script>
   </head>
   <body>
     <div class="main-container">
@@ -17,7 +18,7 @@
             alt="main logo of mustache"
           />
         </a>
-        <nav>
+        <nav class="nav-bar">
           <ul>
             <il class="nav-elements">
               <a href="./index.html" id="home-button">HOME</a>
@@ -36,6 +37,17 @@
             </il>
           </ul>
         </nav>
+        <div class="dropdown">
+          <div onclick="myFunction()" class="dropbtn">
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./index.html">HOME</a>
+            <a href="./pages/about.html">ABOUT</a>
+            <a href="./pages/gallery.html">GALLERY</a>
+            <a href="./pages/blog.html">BLOG</a>
+            <a href="./pages/contact.html">CONTACT</a>
+          </div>
+        </div>
       </header>
       <main>
         <div class="main-one">
@@ -45,28 +57,29 @@
             alt="manly man with mustache driving a car"
           />
           <div class="main-text">
-            <h2>THE BEACON TO ALL MANKIND</h2> <br>
-            <span>Our website templates are created with</span> <br>
-            <span>inspiration, checked for quality and originality</span> <br>
-            <span>and meticulously sliced and coded</span><br>
+            <h2>THE BEACON TO ALL MANKIND</h2>
+            <br />
+            <span>Our website templates are created with</span> <br />
+            <span>inspiration, checked for quality and originality</span> <br />
+            <span>and meticulously sliced and coded</span><br />
             <a id="read-more" href="./pages/blog.html">READ MORE</a>
           </div>
         </div>
         <div class="main-two">
           <div class="the-men">
             <a href="./pages/gallery.html">
-            <img id=the-boys src="./images/the-father.jpg" alt="">
-          </a>
+              <img id="the-boys" src="./images/the-father.jpg" alt="" />
+            </a>
           </div>
           <div class="the-men">
             <a href="./pages/gallery.html">
-            <img id=the-boys src="./images/the-actor.jpg" alt="">
-          </a>
+              <img id="the-boys" src="./images/the-actor.jpg" alt="" />
+            </a>
           </div>
           <div class="the-men">
             <a href="./pages/gallery.html">
-            <img id=the-boys src="./images/the-nerd.jpg" alt="">
-          </a>
+              <img id="the-boys" src="./images/the-nerd.jpg" alt="" />
+            </a>
           </div>
         </div>
         <div class="titles">
@@ -81,23 +94,38 @@
           <ul class="social-nav">
             <li id="twitter">
               <a href="https://twitter.com/">
-                <img id="social" src="./images/social-media-icons/twitter-icon.png" alt="">
+                <img
+                  id="social"
+                  src="./images/social-media-icons/twitter-icon.png"
+                  alt=""
+                />
               </a>
             </li>
             <li id="facebook">
               <a href="https://www.facebook.com/">
-                <img id="social" src="./images/social-media-icons/facebook-icon.png" alt="">
+                <img
+                  id="social"
+                  src="./images/social-media-icons/facebook-icon.png"
+                  alt=""
+                />
               </a>
             </li>
             <li id="linked-in">
               <a href="https://www.linkedin.com/">
-                <img id="social" src="./images/social-media-icons/linked-in-icon.png" alt="">
+                <img
+                  id="social"
+                  src="./images/social-media-icons/linked-in-icon.png"
+                  alt=""
+                />
               </a>
             </li>
-            <li
-            id="pinterest">
+            <li id="pinterest">
               <a href="https://www.pinterest.com/">
-                <img id="social" src="./images/social-media-icons/pinterest-icon.png" alt="">
+                <img
+                  id="social"
+                  src="./images/social-media-icons/pinterest-icon.png"
+                  alt=""
+                />
               </a>
             </li>
           </ul>

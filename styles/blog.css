@@ -4,6 +4,10 @@
   grid-template-rows: auto 1fr auto;
 }
 
+#logo {
+  opacity: 1;
+}
+
 
 header {
   height: 250px;
@@ -45,6 +49,10 @@ a:hover {
   color: rgb(58,181,193);
 }
 
+.dropdown a {
+  display: none;
+}
+
 main {
   padding-top: 10px;
   text-align: center;
@@ -59,6 +67,72 @@ h1 {
   font-weight: bold;
   padding: 10px 40px 10px;
   margin-top: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 19% 40px 19%;
+}
+
+.container > div {
+  margin-bottom: 15px;
+}
+
+.short {
+  border: 2px solid black;
+  height: 300px;
+  width: 380px ;
+
+}
+
+img{
+  opacity: .8;
+  transition: all 0.5s ease;
+  /* border: 2px solid black; */
+
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.long {
+  border: 2px solid black;
+  height: 300px;
+  width: 525px ;
+}
+
+h2 {  
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  overflow: wrap;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 2;;
+}
+
+button {
+  margin-top: 15px;
+  background-color: black;
+  padding: 5px 30px 5px 30px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
 
 footer {
@@ -92,3 +166,92 @@ p {
 .social-nav > li > a > img:hover {
   filter: grayscale(100%);
 }
+
+@media (max-width: 598px) {
+  .main-container {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+   }
+
+   .dropbtn {
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    background-image: url(../images/hamburger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+    background-color:rgb(58,181,193);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+   }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(67, 216, 229);
+  }
+  
+  .dropdown {
+    float: middle;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    background-color: rgb(58,181,193);
+    text-align: center;
+    min-width: 260px;
+   
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: -160%;
+    top: 120%;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+   h1 {
+    font-size: 35px;
+   }
+
+   .container {
+    margin: 50px 50px 40px 50px;
+  }
+
+   .main-text {
+    margin: auto;
+   }
+
+   #last {
+    height: 350px;
+   }
+
+
+   .foot-container {
+    justify-content: center;
+    margin: auto;
+   }
+}
+
