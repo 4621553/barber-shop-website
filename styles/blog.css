@@ -56,6 +56,9 @@ a:hover {
 main {
   padding-top: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* border: 1px solid red; */
 }
 
@@ -71,18 +74,25 @@ h1 {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  margin: 50px 19% 40px 19%;
+  /* flex-wrap: wrap;
+  margin: 50px 19% 40px 19%; */
+  margin: 50px 0;
+  flex-direction: column;
+  align-items: center;
+  max-width: 880px;
 }
 
-.container > div {
+.container > div.blog-container {
   margin-bottom: 15px;
+  height: 300px;
+  display: flex;
+  width: 100%;
 }
 
 .short {
   border: 2px solid black;
-  height: 300px;
-  width: 380px ;
+  /* width: 380px ; */
+  flex: 1;
 
 }
 
@@ -99,8 +109,9 @@ img:hover {
 
 .long {
   border: 2px solid black;
-  height: 300px;
-  width: 525px ;
+  /* height: 300px; */
+  /* width: 525px ; */
+  flex: 2;
 }
 
 h2 {  
@@ -235,7 +246,6 @@ p {
    h1 {
     font-size: 35px;
    }
-
    .container {
     margin: 50px 50px 40px 50px;
   }
@@ -253,5 +263,9 @@ p {
     justify-content: center;
     margin: auto;
    }
+   .container > div.blog-container {
+    flex-direction: column;
+    height: fit-content;
+  }
 }
 
